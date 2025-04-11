@@ -25,8 +25,7 @@ send "\r"
 expect "Hello"
 
 # Send the command. Adjust this command to whatever you need to send after the initial login.
-# In this case, we are sending "C01" to the device. Power ON
-send "C01\r"
+send "{{COMMAND}}\r"
 
 # Wait for any response that indicates the command was processed
 # You need to adjust "done" to the specific message you expect to see after sending your command
